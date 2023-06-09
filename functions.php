@@ -35,8 +35,8 @@ add_action( 'after_setup_theme', 'blueprint_setup' );
 // Il mio stile e i miei scripts
 
 function add_blueprint_scripts() {
-    wp_enqueue_style("la-villa-style", get_template_directory_uri() . '/style.min.css');
-	wp_enqueue_script("la-villa-script", get_template_directory_uri(). '/assets/js/script.min.js', array("jquery"), null, true);
+   wp_enqueue_style("blueprint-style", get_template_directory_uri() . '/style.min.css');
+   wp_enqueue_script("blueprint-script", get_template_directory_uri(). '/assets/js/script.min.js', array("jquery"), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'add_blueprint_scripts' );
 
